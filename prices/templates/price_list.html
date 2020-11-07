@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Displaying Model Data {% endblock title %}
+
+{% block content%}
+
+
+
+
+<table>
+
+
+    {% autoescape off %} {{ df }} {% endautoescape %}
+
+</table>
+
+{% endblock content %}

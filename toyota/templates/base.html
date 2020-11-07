@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Toyota Parts Price Checker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'main.css' %}" rel="stylesheet" type= "text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <div id="logo"><img src="{% static 'horns.jpg' %}" alt=""></div>
+
+        <div id="top_menu">
+    <a href="{% url 'index' %}">Home</a> | <a href="/get_url">Enter URL</a> |  <a href="/contact">Contact me</a>
+  </div>
+
+
+        <div id="topbanner"> <img src="{% static 'taco.jpg' %}" alt=""></div>
+      </header>
+
+      <section id= "main">
+
+
+        {% block content%}
+            <h2>Welcome!</h2>
+            <p>The purpose of this site is to create an easy way to compare prices of OEM Toyota parts from one Toyota dealer to another Toyota dealer.  Enter a part's URL from any Toyota dealer, and the site will scrape over 100 Totoya dealers and return the prices, saving you money and time!</p>
+
+
+        {% endblock content %}
+ </section>
+ <footer id= "footer">Copyright &copy;
+   <script type="text/javascript">
+   document.write(new Date().getFullYear());
+
+
+   </script>
+ </footer>
+</div>
+  </body>
+</html>
