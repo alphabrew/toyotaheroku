@@ -18,14 +18,80 @@ def get_url(request):
 
 def get_prices(request):
     #input_url='https://parts.sftoyota.com/p/Toyota__Tacoma/TRD-Cat-Back-Exhaust/69527109/PT91089061.html'
-    dealers=[
-    '355toyota',
+    dealers=['355toyota',
     'adamstoyota',
-    'avondaletoyota',
     'baierltoyota',
     'beavertoyotastaugustine',
+    'brewerairporttoyota',
+    'cobbcountytoyota',
+    'conicellitoyotaofspringfield',
+    'dandeerytoyota',
+    'darcarstoyota',
+    'darcarstoyotaofbaltimore',
+    'darcarstoyotaoffrederick',
+    'daytonatoyota',
+    'delucatoyota',
+    'deserttoyota',
+    'eastmadisontoyota',
+    'elmoretoyota',
+    'erniepalmertoyota',
+    'foothillstoyota',
+    'fredandersontoyota',
+    'germaintoyotaofnaples',
+    'hamertoyota',
+    'heartlandtoyota',
+    'hendricktoyotaapex',
+    'hendricktoyotaconcord',
+    'hickorytoyota',
+    'jimellistoyota',
+    'josephtoyota',
+    'kerrytoyota',
+    'koch33toyota',
+    'lewistoyota',
+    'lhmtoyotalemongrove',
+    'lithiatoyotabillings',
+    'loyaltytoyotarichmond',
+    'maderatoyota',
+    'maitatoyota',
+    'mariettatoyota',
+    'miltonrubentoyota',
+    'miracletoyota',
+    'myalexandertoyota',
+    'passporttoyota',
+    'puentehillstoyota',
+    'reinhardtmotors',
+    'rogersandrogerstoyota',
+    'rohrichtoyota',
+    'rosevilletoyota',
+    'salinastoyota',
+    'sftoyota',
+    'sheehytoyotafredericksburg',
+    'southdadetoyota',
+    'sparkstoyota',
+    'springhilltoyota',
+    'stcloudtoyota',
+    'stevenscreektoyota',
+    'stevinsontoyotawest',
+    'sunrisetoyota',
+    'tonydivinotoyota',
+    'toyotaofdecatur',
+    'toyotaofdeerfieldbeach',
+    'toyotaofelcajon',
+    'toyotaofgladstone',
+    'toyotaofgreenville',
+    'toyotaoflakecity',
+    'toyotaoflouisville',
+    'toyotaofnorthmiami',
+    'toyotaofredlands',
+    'toyotaofwilmington',
+    'tustintoyota',
+    'villagetoyota',
+    'waldorftoyota',
+    'walkertoyota',
+    'westcoasttoyotalb',
+    'westkendalltoyota',]
 
-    ]
+
     gooddealers=[]
     prices=[]
     urls=[]
@@ -38,9 +104,9 @@ def get_prices(request):
             text=requests.get(url).text
             soup= BeautifulSoup(text, 'html5lib')
             #price_list[dealer]=[float(soup.select('.productPriceSpan')[0].text.split()[0][1:]), url]
-            gooddealers.append(dealer)
             prices.append(float(soup.select('.productPriceSpan')[0].text.split()[0][1:]))
             urls.append(url)
+            gooddealers.append(dealer)
             #urls.append("<a href="+"\""+url+"\""+">Link</a>")
 
         except:
