@@ -1,12 +1,12 @@
-asgiref @ file:///tmp/build/80754af9/asgiref_1594338739818/work
+asgiref
 astroid==2.4.2
 certifi==2020.6.20
 colorama==0.4.4
-Django @ file:///tmp/build/80754af9/django_1600355803933/work
+Django
 isort==5.6.4
 lazy-object-proxy==1.4.3
 mccabe==0.6.1
-psycopg2 @ file:///C:/ci/psycopg2_1594305172475/work
+psycopg2
 pylint==2.6.0
 pytz==2020.1
 sqlparse==0.3.1
