@@ -19,12 +19,11 @@ def get_url(request):
 def get_prices(request):
     #input_url='https://parts.sftoyota.com/p/Toyota__Tacoma/TRD-Cat-Back-Exhaust/69527109/PT91089061.html'
     dealers=['355toyota',
-    'adamstoyota',
-    'baierltoyota',
-    'beavertoyotastaugustine',
-    'brewerairporttoyota',
-    'cobbcountytoyota',
-    ]
+    '355toyota',
+    'camelbacktoyota',
+    'darcarstoyota',
+    'passporttoyota',
+    'koch33toyota',]
 
 
     gooddealers=[]
