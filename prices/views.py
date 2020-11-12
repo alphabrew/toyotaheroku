@@ -28,17 +28,7 @@ def get_prices(request):
     'jimellistoyota',
     'josephtoyota',
     'lagrangetoyota',
-    'lewistoyota',
-    'maderatoyota',
-    'passporttoyota',
-    'rogersandrogerstoyota',
-    'rohrichtoyota',
-    'salinastoyota',
-    'sheehytoyotafredericksburg',
-    'toyotaofdecatur',
-    'toyotaofdeerfieldbeach',
-    'toyotaofnorthmiami',
-    'villagetoyota']
+    ]
 
 
     gooddealers=[]
