@@ -51,5 +51,6 @@ def get_prices(request):
     df.index.name = None
     df.sort_values(['price'], inplace=True)
     df= df.to_html()
-    #return render(request,'price_list.html', {'price_list':price_list})
-    return render(request,'price_list.html', {'df':df})
+    var1= prices[0]
+    return render(request,'price_list.html', {'var1':var1})
+    #return render(request,'price_list.html', {'df':df})
