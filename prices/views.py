@@ -51,6 +51,6 @@ def get_prices(request):
     df.index.name = None
     df.sort_values(['price'], inplace=True)
     df= df.to_html()
-    var1= prices[0]
+    var1= 10
     return render(request,'price_list.html', {'var1':var1})
     #return render(request,'price_list.html', {'df':df})
